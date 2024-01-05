@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="STYLEE.CSS">
+  <link rel="JAVASCRIPT" href="feedback.js">
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <h1 class="heading"><center><a href="aboutme.html">Contact Us</a></center></a></h1>
+  
+  <div class="contact-section">
+    <h2>FeedBack Form</h2>
+    <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const formData = new FormData(this);   
+    console.log('Form submitted!', formData);   
+    alert('Form submitted!');
+    this.reset();
+  });
+</script>
+     <footer>
+        <p><center>&copy; 2023 Karthik S M. &copy;All rights reserved.</center></p>
+    </footer>
+</body>
+</html>

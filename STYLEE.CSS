@@ -1,0 +1,39 @@
+body{
+    background-image: url("bg1.jpg");
+ }
+ .heading{
+    color: #ffffff;
+ }
+    .contact-section {
+      margin: 20px;
+      padding: 20px;
+      align-items: center;
+      background-color: #ffffff;
+      border: 1px solid #000000;
+      border-radius: 5px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+
+    form {
+      display: grid;
+      gap: 10px;
+      background-color: #ffffff;
+      width: 100%;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #ce2222;
+      color: rgb(255, 255, 255);
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #000000;
+    }
